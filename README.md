@@ -1,4 +1,14 @@
-# React + Vite
+# DOMM HIVE
+
+Site institucional da DOMM HIVE.
+
+## Deploy gratuito
+
+O deploy está configurado via GitHub Actions e GitHub Pages. Cada push na branch `main` instala as dependências, gera o build e publica automaticamente a pasta `dist`.
+
+Depois do primeiro push, ative em `Settings > Pages` a opção `GitHub Actions` como fonte de deploy.
+
+O endereço padrão será: https://baiani-dev.github.io/DOMMHIVE/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
