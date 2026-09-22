@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   FONTS DEFINITIONS
+   ========================================================================== */
+
+/* --- LOOS SERIES --- */
+@font-face {
+  font-family: "LoosExtraWide";
+  src: url("./fonts/LOOS/fonnts.com-Loos_ExtraWide_Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LoosExtendedBlack";
+  src: url("./fonts/LOOS/fonnts.com-Loos_Extended_Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* --- OCR A STD --- */
+@font-face {
+  font-family: "OCRAStd";
+  src: url("./fonts/OCRAS/OCRAStd.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* --- BDO GROTESK SERIES --- */
+@font-face {
+  font-family: "BDOGrotesk-Light";
+  src: url("./fonts/BDOGROTESK/BDOGrotesk-Light-BF648a656f46f93.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "BDOGrotesk-Regular";
+  src: url("./fonts/BDOGROTESK/BDOGrotesk-Regular-BF648a656f74a27.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BDOGrotesk-Bold";
+  src: url("./fonts/BDOGROTESK/BDOGrotesk-ExtraBold-BF648a656f31316.otf") format("opentype");
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   UTILITÁRIOS DE FONTE (Para usar no className)
+   ========================================================================== */
+
+/* Loos */
+.font-loos { font-family: "LoosExtraWide", sans-serif; }
+.font-loos-black { font-family: "LoosExtendedBlack", sans-serif; }
+
+/* OCR */
+.font-ocra { font-family: "OCRAStd", monospace; }
+
+/* BDO Grotesk */
+.font-bdo-light { font-family: "BDOGrotesk-Light", sans-serif; }
+.font-bdo-reg { font-family: "BDOGrotesk-Regular", sans-serif; }
+.font-bdo-bold { font-family: "BDOGrotesk-Bold", sans-serif; }
+
+/* ==========================================================================
+   CONFIGURAÇÃO PARA LENIS E ESTRUTURA
+   ========================================================================== */
+html {
+  scroll-behavior: initial;
+}
+
+html.lenis {
+  height: auto;
+}
+
+body {
+  background-color: #000;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de empilhamento das seções */
+div:not(:first-child) section {
+  transform: translateY(100%);
+}
+
+.panel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+html, body {
+  overflow-x: hidden;
+  height: auto;
+}
